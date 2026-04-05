@@ -1,6 +1,7 @@
 # tiny_graphics
 
 > A tiny graphics + physics engine written for the even tinier raspberry pi pico.
+<img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/be15d4bd-7cfb-4d0f-9ac3-e4cb3927f094" />
 
 ## Why
 
@@ -97,7 +98,7 @@ The features required for a physics engine are still in development.
 
 ## Examples
 
-This library has a few basic examples to showcase core features.
+This library has a few basic examples to showcase core features. You can check them out in the "/examples" directory.
 
 ### How to run any example
 - Install the [Pi Pico extension for VS Code](https://pip-assets.raspberrypi.com/categories/610-raspberry-pi-pico/documents/RP-008276-DS-1-getting-started-with-pico.pdf?disposition=inline).
