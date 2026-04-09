@@ -262,8 +262,6 @@ void draw_shape(display* display, vec2* points, uint size, bool on){
 }
 
 void draw_shape_fill(display* display, vec2* points, uint size, bool on){
-    draw_shape(display, points, 4, on);
-
     int xmin = points[0].x;
     int xmax = points[0].x;
     int ymin = points[0].y;
@@ -276,8 +274,8 @@ void draw_shape_fill(display* display, vec2* points, uint size, bool on){
         ymax = MAX(ymax, points[i].y);
     }
 
-    for(int y = ymin; y < ymax; y++){
-        for(int x = xmin; x < xmax; x++){
+    for(int y = ymin; y <= ymax; y++){
+        for(int x = xmin; x <= xmax; x++){
             vec2 point = {x, y};
             if(point_inside_shape(point, points, size)){
                 draw_point(display, (vec2){x, y}, on);
