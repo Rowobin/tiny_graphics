@@ -102,7 +102,7 @@ const uint8_t characters[] = {
 };
 
 void init_i2c(display* display){
-    i2c_init(display->i2c, 400000);
+    i2c_init(display->i2c, display->baudrate);
     gpio_set_function(display->gpio_sda, GPIO_FUNC_I2C);
     gpio_set_function(display->gpio_scl, GPIO_FUNC_I2C);
     gpio_pull_up(display->gpio_sda);
